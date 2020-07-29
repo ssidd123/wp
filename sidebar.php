@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template for displaying Sidebar
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package _s
+ */
+
+?>
+
 <div class="container" id="widget_area">
 	<div class="row">
 		<div class="col-sm-6 col-md-3">
@@ -12,8 +23,9 @@
 			<h4>Recent Projects</h4>
 				<div class="dashed" id="recent_projects">
 					<aside id="sidebar-secondary" class="sidebar">
-						<?php 
-						dynamic_sidebar( 'secondary' ); ?>
+						<?php
+						dynamic_sidebar( 'secondary' );
+						?>
 					</aside><!-- #projects -->
 				</div>
 		</div>
@@ -21,9 +33,10 @@
 			<h4>Stay in Touch</h4>
 				<div class="dashed" id="stay_in_touch">
 					<aside id="sidebar-tertiary" class="sidebar">
-					
-						<?php require_once('lib/inc/widgets.php'); 
-						dynamic_sidebar( 'tertiary' ); ?>
+					<?php
+						require_once 'lib/inc/widgets.php';
+						dynamic_sidebar( 'tertiary' );
+					?>
 					</aside><!-- #touch 3-->
 				</div>
 		</div>
